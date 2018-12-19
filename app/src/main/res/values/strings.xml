@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">HelloWorld2018中国</string>
+    <string name="content">其实这几个月也并不是什么事也没有做，俺可是时刻想着今年的任务呢，10本书，30篇博文...，这几个月间断性的也是在学习中，学H5，学设计模式，以及NDK JNI开发等等。
+
+        学习JNI主要是因为公司有一些COCOS游戏需要添加计费点，而又没有真正的游戏开发人员，这个重任就落到我身上了，然后就是各种虐，一虐到底，苦不堪言，这种虐并不是学习技术的虐，而是一款游戏用于N种计费点，不停的改改改，那个需求这个需要的，然后你就等着被玩吧。
+
+        正文
+
+        OK，言归正传，说到NDK，相信大家都不陌生，它是Google为便于Android开发提供的一种原生开发集：Native Development
+        Kit，而且也是一个包含API、构建工具、交叉编译、调试器、文档示例等一系列的工具集，可以帮助开发者快速开发C（或C++）的动态库，并能自动将so和java应用一起打包成APK。
+
+        与NDK密切相关的另一个词汇则是JNI，它是NDK开发中的枢纽，Java与底层交互绝大多数都是通过它来完成的，那么接下来看看什么是JNI?
+    </string>
+    <string name="title_activity_login">Sign in/登陆</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="textviewhello">
+        TextViewHello中国TextViewHello中国abcTextViewHello中国TextViewHello中国
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">空白Fragment => Hello blank fragment</string>
+</resources>
