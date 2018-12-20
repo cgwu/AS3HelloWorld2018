@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DemoInterface/DemoInterface.iml" filepath="$PROJECT_DIR$/DemoInterface/DemoInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloWorld2018.iml" filepath="$PROJECT_DIR$/HelloWorld2018.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/democlient/democlient.iml" filepath="$PROJECT_DIR$/democlient/democlient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demohost/demohost.iml" filepath="$PROJECT_DIR$/demohost/demohost.iml" />
       <module fileurl="file://$PROJECT_DIR$/xposedfirstmodule/xposedfirstmodule.iml" filepath="$PROJECT_DIR$/xposedfirstmodule/xposedfirstmodule.iml" />
     </modules>
   </component>
