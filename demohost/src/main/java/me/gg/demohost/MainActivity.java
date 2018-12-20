@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -44,6 +45,15 @@ public class MainActivity extends AppCompatActivity {
         String dexOuputDir = getApplicationInfo().dataDir;
         String libPath = ainfo.applicationInfo.nativeLibraryDir;
 
+        String pluginVersion = "";
+        try {
+            Resources res = pm.getResourcesForApplication(packageName); // plugin resource
+            int id = res.getIdentifier("version", "string", packageName);
+            pluginVersion = res.getString(id);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
         DexClassLoader cl = new DexClassLoader(dexPath, dexOuputDir,
                 libPath, this.getClass().getClassLoader());
         try {
@@ -57,10 +67,10 @@ public class MainActivity extends AppCompatActivity {
 //            Integer ret = (Integer) action.invoke(obj, 12, 34);
 
             //法2：
-            Comm comm = (Comm)obj;
-            Integer ret = comm.function1(11,22);
-            Log.i("Host", "Plugin Return Value is " + ret);
-            ((TextView) findViewById(R.id.tvResult)).setText("Plugin Return Value is " + ret);
+            Comm comm = (Comm) obj;
+            Integer ret = comm.function1(11, 22);
+            Log.i("Host", "Plugin " + pluginVersion + " Return Value is " + ret);
+            ((TextView) findViewById(R.id.tvResult)).setText("Plugin " + pluginVersion + " Return Value is " + ret);
         } catch (Exception e) {
             e.printStackTrace();
         }
