@@ -1,1 +1,1 @@
-include ':app', ':xposedfirstmodule', ':demohost', ':democlient', ':DemoInterface'
+include ':app', ':xposedfirstmodule', ':demohost', ':democlient', ':DemoInterface', ':hellojava'

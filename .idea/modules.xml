@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/democlient/democlient.iml" filepath="$PROJECT_DIR$/democlient/democlient.iml" />
       <module fileurl="file://$PROJECT_DIR$/demohost/demohost.iml" filepath="$PROJECT_DIR$/demohost/demohost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellojava/hellojava.iml" filepath="$PROJECT_DIR$/hellojava/hellojava.iml" />
       <module fileurl="file://$PROJECT_DIR$/xposedfirstmodule/xposedfirstmodule.iml" filepath="$PROJECT_DIR$/xposedfirstmodule/xposedfirstmodule.iml" />
     </modules>
   </component>

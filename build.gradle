@@ -27,7 +27,8 @@ allprojects {
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
-
+        // ref: https://github.com/NaikSoftware/StompProtocolAndroid
+        maven { url "https://jitpack.io" }
     }
 }
 
