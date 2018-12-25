@@ -34,8 +34,8 @@ public class WebSocketStompActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web_socket_stomp);
 
         ((Button) findViewById(R.id.btnWsConnect)).setOnClickListener(v -> {
-            mStompClient = Stomp.over(Stomp.ConnectionProvider.JWS, "ws://192.168.50.5:8080/stomp/websocket");
-
+            mStompClient = Stomp.over(Stomp.ConnectionProvider.JWS,
+                    "http://192.168.50.5:8080/stomp/083/1234567x/websocket");
             mStompClient.lifecycle()
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
@@ -52,8 +52,6 @@ public class WebSocketStompActivity extends AppCompatActivity {
                                 toast("Stomp connection closed");
                         }
                     });
-
-
 
             // Receive greetings
             mStompClient.topic("/topic")
